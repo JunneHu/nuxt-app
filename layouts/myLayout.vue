@@ -1,9 +1,12 @@
 <template>
   <div>
+    mylayout
     <Nuxt />
   </div>
 </template>
 
-<style>
+<script>
+</script>
 
+<style>
 </style>

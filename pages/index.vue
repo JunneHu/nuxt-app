@@ -1,16 +1,14 @@
 <template>
-  <div class="container">
-    1
-  </div>
+  <div class="container">1</div>
 </template>
 
 <script>
+import { httpGet } from "~/plugins/httpRequest";
 export default {
-  // async asyncData({ $axios, params }) {
-  //   const posts = await $axios.$get('https://it-console-mall.suuyuu.cn/addbanner');
-  //   console.log(posts)
-  //   return { posts };
-  // },
+  async asyncData() {
+    const posts = await httpGet("/user/getUserInfo");
+    console.log(posts);
+  },
 };
 </script>
 
