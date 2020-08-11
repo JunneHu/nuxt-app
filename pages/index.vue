@@ -6,11 +6,11 @@
 
 <script>
 export default {
-  async asyncData({ $axios, params }) {
-    const posts = await $axios.$get('https://it-console-mall.suuyuu.cn/addbanner');
-    console.log(posts)
-    return { posts };
-  },
+  // async asyncData({ $axios, params }) {
+  //   const posts = await $axios.$get('https://it-console-mall.suuyuu.cn/addbanner');
+  //   console.log(posts)
+  //   return { posts };
+  // },
 };
 </script>
 
