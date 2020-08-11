@@ -5,9 +5,13 @@
 <script>
 import { httpGet } from "~/plugins/httpRequest";
 export default {
-  async asyncData() {
+  async created() {
     const posts = await httpGet("/user/getUserInfo");
     console.log(posts);
+  },
+  async asyncData() {
+    // const posts = await httpGet("/user/getUserInfo");
+    // console.log("1");
   },
 };
 </script>
