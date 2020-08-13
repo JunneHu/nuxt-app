@@ -1,3 +1,3 @@
 export default {
-    dbs:'mongodb://127.0.0.1:27017/admin',
+    dbs:'mongodb://127.0.0.1:27017/fl',
 }

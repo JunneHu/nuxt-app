@@ -2,11 +2,10 @@ import Koa from 'koa'
 const consola = require('consola')
 const {Nuxt, Builder} = require('nuxt')
 
-import mongoose from 'mongoose'
 import bodyParser from 'koa-bodyparser'
 import json from 'koa-json'
-import dbConfig from './dbs/config'
 import users from './interface/user'
+import './dbs/index'
 
 const app = new Koa()
 const host = process.env.HOST || '127.0.0.1'
@@ -18,9 +17,6 @@ app.use(bodyParser({
 }))
 app.use(json())
 
-// mongoose.connect(dbConfig.dbs,{
-//   useNewUrlParser:true
-// })
 
 // Import and Set Nuxt.js options
 let config = require('../nuxt.config.js')
