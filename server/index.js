@@ -2,11 +2,21 @@ import Koa from 'koa'
 const { Nuxt, Builder } = require('nuxt')
 import bodyParser from 'koa-bodyparser'
 import json from 'koa-json'
+import dbConfig from './dbs'
+import mongoose from 'mongoose'
 import users from './interface/users'
 
 const app = new Koa()
 
+app.use(bodyParser({
+    extendTypes: ['json', 'form', 'text']
+}))
+
 app.use(json())
+
+mongoose.connect(dbConfig.dbUrl, {
+    useNewUrlParser: true
+})
 
 let config = require('../nuxt.config.js')
 config.dev = !(app.env === 'production')
