@@ -1,3 +1,3 @@
 export default {
-    dbUrl: 'mongodb://127.0.0.1:27017/student'
+    dbUrl: 'mongodb://127.0.0.1:27017/fl'
 }

@@ -5,6 +5,7 @@ import json from 'koa-json'
 import dbConfig from './dbs'
 import mongoose from 'mongoose'
 import users from './interface/users'
+import banner from './interface/banner'
 
 const app = new Koa()
 
@@ -31,6 +32,7 @@ async function start() {
         await builder.build()
     }
     app.use(users.routes()).use(users.allowedMethods())
+    app.use(banner.routes()).use(banner.allowedMethods())
 
     app.use(ctx => {
         ctx.status = 200 // koa defaults to 404 when it sees that status is unset
