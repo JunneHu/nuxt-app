@@ -20,7 +20,7 @@ $ yarn generate
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
 
-admin:
+后台管理
 登录：login (默认账号administrator 123456)
 退出 exit
 设置：
@@ -68,4 +68,13 @@ admin:
         状态 status
 订单管理
 利润统计
-    
+
+用户侧
+注册
+登录
+退出
+首页 （banner 、所有分类和商品）
+商品详情
+订单详情
+订单列表
+
