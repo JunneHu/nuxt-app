@@ -66,8 +66,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
         图片 img
         排序 sort
         状态 status
-订单管理
-利润统计
+订单管理：getList
+利润统计： getList
 
 用户侧
 注册
