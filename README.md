@@ -29,7 +29,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
     修改密码：updatePwd
 会员管理:
     用户管理：增/删/改/查 add/delete/edit/getList
-        昵称 nickName
+        昵称 username
         手机号 mobile
         密码 password
         上次登录时间 lastLoginTime
